@@ -1,0 +1,19 @@
+.open-hours-div{
+    font-size: 20px;
+    color: blanchedalmond;
+    text-align: center;
+    display: flex;
+}
+.let-me-see-the-menu{
+    font-size: 40px;
+    color: blanchedalmond;
+    text-align: center;
+}
+.name-of-shop-span{
+    font-size: 40px;
+    color: blanchedalmond;
+    text-align: center;
+}
+body{
+    text-align: center;
+}
