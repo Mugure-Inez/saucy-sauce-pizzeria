@@ -1,19 +1,25 @@
 .open-hours-div{
     font-size: 20px;
-    color: blanchedalmond;
+    color: rgb(8, 8, 8);
     text-align: center;
-    display: flex;
+    border-style: solid;
 }
 .let-me-see-the-menu{
-    font-size: 40px;
-    color: blanchedalmond;
+    font-size: 30px;
+    color: rgb(8, 8, 8);
     text-align: center;
+    border-style: solid;
 }
 .name-of-shop-span{
-    font-size: 40px;
-    color: blanchedalmond;
+    font-size: 50px;
+    color: rgb(255, 235, 205);
     text-align: center;
 }
 body{
     text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+.navigation-bar{
+    padding: 10px;
+    color: rgb(255, 235, 205);
 }
