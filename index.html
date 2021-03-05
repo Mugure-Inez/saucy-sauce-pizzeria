@@ -9,26 +9,67 @@
 </head>
 <body>
 <div id="landing-page" class="landing-page">
-
-        <!-- navigation bar -->
-        <div class="navigation-bar">
-            <a href="home" class="home-page">HOME</a>
-            <a href="menu" class="menu-page">MENU</a>
-            <a href="about" class="about-page">ABOUT</a>
-            <a href="contact" class="contact-page">CONTACT</a>
+    <div class="open-hours-div">OPEN 24 HOURS</div>
+    <h1>SAUCY SAUCE PIZZERIA</h1>
+</div>
+<div class="make-pizza" id="choose-pizza-size" id="choose-pizza-crust" id="choose-pizza-toppings">
+    <div class="row">
+        <div class="column" style="background-color:#aaa;">
+            <h2>CHOOSE PIZZA SIZE</h2>
+            <p>Kindly select the pizza size from the choices listed below:</p>
+            <form action="/js/script.js">
+            <label for="pizza-size">CHOOSE PIZZA SIZE</label>
+            <select name="pizza-size" id="pizza-size">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select>
+            <br><br>
+            <input type="submit" value="Submit">
+            </form>
         </div>
-
-        <!-- header image -->
-        <div style="height: 1000px; background-image: url(./images/pizzeria-background-image6.jpg); background-repeat: no-repeat;" class="front-page">
-            <div class="open-hours-div">
-                <span class="open-hours-span">OPEN 24 HOURS</span>
-            </div>
-            <div class="name-of-shop-div">
-                <span class="name-of-shop-span">SAUCY SAUCE PIZZERIA</span>
-                <p><a href="menu" class="let-me-see-the-menu">LET ME SEE THE MENU</a></p>
-            </div>
+        <div class="column" style="background-color: #bbb;">
+            <h2>CHOOSE PIZZA CRUST</h2>
+            <p>Kindly select the pizza crust from the choices listed below:</p>
+            <form action="/js/script.js">
+                <label for="pizza-crust">CHOOSE PIZZA CRUST</label>
+                <select name="pizza-crust" id="pizza-crust">
+                    <option value="fast-food-pizza">Fast Food Pizza</option>
+                    <option value="cheese-stuffed-crust">Cheese Stuffed Crust</option>
+                    <option value="pizza-bagels">Pizza Bagels</option>
+                    <option value="flatbread">Flatbread</option>
+                    <option value="thin-crust">Thin Crust</option>
+                    <option value="sicilian-crust">Sicilian Crust</option>
+                    <option value="chicago-deep-dish">Chicago Deep Dish</option>
+                    <option value="neapolitan-crust">Neapolitan Crust</option>
+                    <option value="NY-style-pizza">NY Style Pizza</option>
+                </select>
+                <br><br>
+                <input type="submit" value="Submit">
+                </form>
         </div>
-
+        <div class="column" style="background-color: #ccc;">
+            <h2>CHOOSE PIZZA TOPPINGS</h2>
+            <p>Kindly select the pizza toppings from the choices listed below:</p>
+            <form action="/js/script.js">
+                <label for="pizza-toppings">CHOOSE PIZZA TOPPING</label>
+                <select name="pizza-toppings" id="pizza-toppings">
+                    <option value="pepperoni">Pepperoni</option>
+                    <option value="mushrooms">Mushrooms</option>
+                    <option value="onions">Onions</option>
+                    <option value="sausage">Sausage</option>
+                    <option value="bacon">Bacon</option>
+                    <option value="extra-cheese">Extra Cheese</option>
+                    <option value="black-olives">Black Olives</option>
+                    <option value="green-peppers">Green Peppers</option>
+                    <option value="pineapple">Pineapple</option>
+                    <option value="spinach">Spinach</option>
+                </select>
+                <br><br>
+                <input type="submit" value="Submit">
+                </form>
+        </div>
+    </div>
 
 </div>
 </body>
