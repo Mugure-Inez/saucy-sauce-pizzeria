@@ -2,18 +2,19 @@
     font-size: 20px;
     color: rgb(8, 8, 8);
     text-align: center;
-    border-style: solid;
+    /* border-style: solid; */
 }
 .landing-page{
     font-size: 20px;
     color: rgb(8, 8, 8);
     text-align: center;
+    padding: 30vh;
 }
 
 .column{
     float: left;
     width: 33.3%;
-    height: 400px;
+    height: 500px;
     text-align: center;
 }
 .row:after{

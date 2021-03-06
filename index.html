@@ -9,8 +9,9 @@
 </head>
 <body>
 <div id="landing-page" class="landing-page">
-    <div class="open-hours-div">OPEN 24 HOURS</div>
+    <!-- <div class="open-hours-div">OPEN 24 HOURS</div> -->
     <h1>SAUCY SAUCE PIZZERIA</h1>
+    <div class="open-hours-div">OPEN 24 HOURS</div>
 </div>
 <div class="make-pizza" id="choose-pizza-size" id="choose-pizza-crust" id="choose-pizza-toppings">
     <div class="row">
@@ -67,18 +68,26 @@
             <p>Kindly select the pizza toppings from the choices listed below:</p>
             <form action="/js/script.js">
                 <label for="pizza-toppings">CHOOSE PIZZA TOPPING</label>
+
                 <select name="pizza-toppings" id="pizza-toppings">
                     <option value="pepperoni">Pepperoni</option>
                     <option value="mushrooms">Mushrooms</option>
                     <option value="onions">Onions</option>
+                </select>
+
+                <select name="pizza-toppings" id="pizza-toppings">
                     <option value="sausage">Sausage</option>
                     <option value="bacon">Bacon</option>
                     <option value="extra-cheese">Extra Cheese</option>
+                </select>
+
+                <select name="pizza-toppings" id="pizza-toppings">
                     <option value="black-olives">Black Olives</option>
                     <option value="green-peppers">Green Peppers</option>
                     <option value="pineapple">Pineapple</option>
                     <option value="spinach">Spinach</option>
                 </select>
+
                 <br><br>
                 <input type="submit" value="Submit">
                 </form>
@@ -94,6 +103,8 @@
 
 </div>
 
+<!-- <div class="open-hours-div">OPEN 24 HOURS</div> -->
+
 <div class="checkout-form">
     <style>
         body {
@@ -107,25 +118,25 @@
         }
         
         .row {
-          display: -ms-flexbox; /* IE10 */
+          display: -ms-flexbox; 
           display: flex;
-          -ms-flex-wrap: wrap; /* IE10 */
+          -ms-flex-wrap: wrap; 
           flex-wrap: wrap;
           margin: 0 -16px;
         }
         
         .col-25 {
-          -ms-flex: 25%; /* IE10 */
+          -ms-flex: 25%;
           flex: 25%;
         }
         
         .col-50 {
-          -ms-flex: 50%; /* IE10 */
+          -ms-flex: 50%; 
           flex: 50%;
         }
         
         .col-75 {
-          -ms-flex: 75%; /* IE10 */
+          -ms-flex: 75%; 
           flex: 75%;
         }
         
@@ -190,7 +201,6 @@
           color: grey;
         }
         
-        /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
         @media (max-width: 800px) {
           .row {
             flex-direction: column-reverse;
@@ -200,6 +210,7 @@
           }
         }
         </style>
+        
 <h2>CHECKOUT</h2>
 <p>Kindly fill in the details below to checkout</p>
 <div class="row">
