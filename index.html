@@ -21,11 +21,18 @@
             <p>Kindly select the pizza size from the choices listed below:</p>
             <form action="/js/script.js">
             <label for="pizza-size">CHOOSE PIZZA SIZE</label>
-            <select name="pizza-size" id="pizza-size">
-                <option value="small">Small</option>
-                <option value="medium">Medium</option>
-                <option value="large">Large</option>
-            </select>
+              <select name="pizza-size" id="pizza-size">
+                <option value="small">Small [6 slices]</option>
+                <option value="small">Small [4 slices]</option>
+              </select>
+              <select name="pizza-size" id="pizza-size">
+                  <option value="medium">Medium [12 slices]</option>
+                  <option value="medium">Medium [14 slices]</option>
+              </select>
+              <select name="pizza-size" id="pizza-size">
+                  <option value="large">Large [18 slices]</option>
+                  <option value="large">Large [20 slices]</option>
+              </select>
             <br><br>
             <input type="submit" value="Submit">
             </form>
@@ -60,7 +67,7 @@
                 <form onsubmit="return clearInput()">
                     <input class="clear" type="submit" value="Clear input">
                   </form>
-                  <br><br>
+                  <br><br><br>
                   <h4 id = pizza-crust><strong>Your Pizza Crust will be displayed below:</strong></h4>
                 <p id="result"></p>
         </div>
@@ -96,7 +103,7 @@
                 <form onsubmit="return clearInput()">
                     <input class="clear" type="submit" value="Clear input">
                   </form>
-                  <br><br>
+                  <br><br><br>
                   <h4 id = pizza-toppings><strong>Your Pizza Toppings will be displayed below:</strong></h4>
                 <p id="result"></p>
         </div>
@@ -280,12 +287,112 @@
   </div>
   <div class="col-25">
     <div class="container">
-      <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>3</b></span></h4>
-      <p><a href="#">pizza size</a> <span class="price">$0</span></p>
+      <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i></span></h4>
+      <table id="myTable" class="table">
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Name</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th class="text-right">
+              <span id="amount" class="amount">Amount</span>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="product-img">
+                <div class="img-product">
+                  <img src="" alt="">
+                </div>
+              </div>
+            </td>
+            <td>
+              <p>Pizza One</p>
+            </td>
+            <td>
+              <div class="button-container">
+                <button class="cart-qty-plus" type="button" value="+">+</button>
+                <input type="text" name="qty" min="0" class="qty form-control" value="0">
+                <button class="cart-qty-minus" type="button" value="-">-</button>
+              </div>
+            </td>
+            <td>
+              <input type="text" value="12" class="price form-control" disabled>
+            </td>
+            <td align="right">$
+              <span id="amount" class="amount">0</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="product-img">
+                <div class="img-product">
+                  <img src="" alt="">
+                </div>
+              </div>
+            </td>
+            <td>
+              <p>Pizza Two</p>
+            </td>
+            <td>
+              <div class="button-container">
+                <button class="cart-qty-plus" type="button" value="+">+</button>
+                <input type="text" name="qty" min="0" class="qty form-control" value="0">
+                <button class="cart-qty-minus" type="button" value="-">-</button>
+              </div>
+            </td>
+            <td>
+              <input type="text" value="12" class="price form-control" disabled>
+            </td>
+            <td align="right">$
+              <span id="amount" class="amount">0</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="product-img">
+                <div class="img-product">
+                  <img src="" alt="">
+                </div>
+              </div>
+            </td>
+            <td>
+              <p>Pizza Three</p>
+            </td>
+            <td>
+              <div class="button-container">
+                <button class="cart-qty-plus" type="button" value="+">+</button>
+                <input type="text" name="qty" min="0" class="qty form-control" value="0">
+                <button class="cart-qty-minus" type="button" value="-">-</button>
+              </div>
+            </td>
+            <td>
+              <input type="text" value="12" class="price form-control" disabled>
+            </td>
+            <td align="right">$
+              <span id="amount" class="amount">0</span>
+            </td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="4"></td>
+            <td align="right">
+              <strong>TOTAL = $
+                <span id="total" class="total">0</span>
+              </strong>
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+      <!-- <p><a href="#">pizza size</a> <span class="price">$0</span></p>
       <p><a href="#">pizza crust</a> <span class="price">$0</span></p>
       <p><a href="#">pizza toppings</a> <span class="price">$0</span></p>
       <hr>
-      <p>Total <span class="price" style="color:black"><b>$0</b></span></p>
+      <p>Total <span class="price" style="color:black"><b>$0</b></span></p> -->
     </div>
   </div>
 </div>
